@@ -1,0 +1,31 @@
+<ngb-carousel *ngIf="images" style="text-align: center;">
+    <ng-template ngbSlide *ngFor="let img of images">
+        <div class="picsum-img-wrapper">
+            <img [src]="img" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+            <h3>10 seconds between slides...</h3>
+            <p>This carousel uses customized default values.</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+
+<div class="center">
+    <span >Discover Your Next Adventure</span>
+
+</div>
+
+<div class="row" style="padding-left: 2%; padding-right: 2%;">
+    <div class="col-md-4" *ngFor="let img of monthsImages;let i=index">
+        <div class="">
+
+            <img src="{{img}}" class="img-rounded" alt="Nature" style="width:100%;border-radius: 5px;">
+            <div class="caption">
+                <p>MANALI</p>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
